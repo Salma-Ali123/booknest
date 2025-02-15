@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+/* header styling */
+.navbar{
+    background-color: #F9F2E8;
+    border-color:#7f6f59 ;
+}.nav-btn{
+    background-color: #cac8c1;
+}header{
+    height: 100vh;
+    background-color: #F9F2E8;
+}.carousel-img{
+    width: 60%;
+}.btn-2{
+    border: 1px solid #D5B695;
+    background-color: transparent;
+    color: #D5B695;
+}.header-content h2{
+    color:#D2B48C;  
+}
+/* client-holder */
+.client-holder{
+    background-color: #EDEBE4;
+}
+
+/* featured */
+.featured{
+    background-color: #F9F2E8;
+}.featured h3{
+    color: #D2B48C;
+}.card{
+    background-color: #EFEEE8;
+}
+
+/* topbtn and cart-shopping*/
+.top-btn{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    background-color: #D2B48C;
+    z-index: 999999;
+    cursor: pointer;
+}.cart-shopping{
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    background-color: #D2B48C;
+    z-index: 999999;
+    cursor: pointer;
+}
+
+/* popularBooks */
+.popular-Books .card{    
+    background-color: snow;
+    transition: 2s;
+}.layer{
+    background-image: linear-gradient(to top , rgba(120, 80, 6, 0.5) ,rgba(144, 95, 5, 0.5));
+    height: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: height 1s;
+    overflow: hidden;
+    color:#383127 ;
+}#popularBooks .card:hover{
+    transform: scale(1.05);
+    border-radius: 15px;
+    box-shadow: 1px 1px 0.5rem 0.5rem gray;
+    cursor: pointer;
+}#popularBooks .card:hover .layer{
+    height: 100%;
+}
+
+/* about-us */
+.about-us{
+    background-color: #F9F2E8;
+    color: #383127;
+}.btn-3{
+    border: 1px solid #383127;
+    background-color: transparent;
+    color: #383127;
+}
+
+/* Quote */
+.Quote h3{
+    color: #383127;
+}
+
+/* offers */
+.offers .card{    
+    background-color: snow;
+    transition: 2s;
+}.layer{
+    background-image: linear-gradient(to top , rgba(120, 80, 6, 0.5) ,rgba(144, 95, 5, 0.5));
+    height: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: height 1s;
+    overflow: hidden;
+    color:#383127 ;
+}.offers .card:hover{
+    transform: scale(1.05);
+    border-radius: 15px;
+    box-shadow: 1px 1px 0.5rem 0.5rem gray;
+    cursor: pointer;  
+}.offers .card:hover .layer{
+    height: 100%;
+}.offers{
+    background-color: #F9F2E8;
+}
+
+/* subscibe */
+.subscibe .container{
+    background-color:#F9F2E8 ;
+    box-shadow: 1px 1px 0.5rem 0.5rem gray;
+}
+
+/* articles */
+.articles h6{
+    color: #9F9570;
+}.image-container {
+    overflow: hidden;
+    display: inline-block;
+}.image-container img {
+    transition: transform 2s ease-in-out;
+}.image-container:hover img {
+    transform: scale(1.2);
+}
+
+/* contact us */
+.contact-us{
+    background-color: #cac8c1;
+}.sign-up {
+    background-color: #383127;
+    color: white;
+}.contact-us input{
+    background-color:#F9F2E8 ;
+}.contact-us textarea{
+    background-color:#F9F2E8 ;
+}
+
+/* footer */
+footer{
+    background-color: #FEF8EC;
+}footer ul{
+    list-style-type: none;
+    color: #383127;
+    font-weight: bold;
+}
+
+/* live chat */
+#chat-widget {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-family: Arial, sans-serif;
+}#chat-toggle {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}#chat-container {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}#chat-header {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}#close-chat {
+    cursor: pointer;
+}#chat-box {
+    height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}#chat-messages {
+    display: flex;
+    flex-direction: column;
+}.message {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    max-width: 80%;
+}.user-message {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+}.bot-message {
+    background: #eee;
+    color: black;
+    align-self: flex-start;
+}#chat-input-container {
+    display: flex;
+    padding: 10px;
+}#chat-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}#send-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}#send-btn:hover {
+    background: #0056b3;
+}.hidden {
+    display: none;
+}
+
+@media (max-width: 678px) {
+    header{
+        height: 130vh;
+        background-color: #F9F2E8;
+        text-align: center;
+    }
+}
