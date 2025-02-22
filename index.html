@@ -632,6 +632,29 @@
     </div><!--container-->
   </section>
 
+
+  <!--uploading-->
+  <section class="container my-5 uploading">
+    <h2 class="text-center mb-4">Upload a Book to Share</h2>
+    <div class="card p-4 shadow">
+      <form>
+        <div class="mb-3">
+          <label for="bookTitle" class="form-label">Book Title</label>
+          <input type="text" class="form-control" id="bookTitle" placeholder="Enter book title" required>
+        </div>
+        <div class="mb-3">
+          <label for="bookAuthor" class="form-label">Author</label>
+          <input type="text" class="form-control" id="bookAuthor" placeholder="Enter author name" required>
+        </div>
+        <div class="mb-3">
+          <label for="bookFile" class="form-label">Upload Book Cover</label>
+          <input type="file" class="form-control" id="bookFile" accept="image/*" required>
+        </div>
+        <button type="submit" class="btn text-white btn-upload w-100">Upload Book</button>
+      </form>
+    </div>
+  </section>
+  
   <!-- footer -->
   <footer>
     <div class="container pt-5">
