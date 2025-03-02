@@ -66,3 +66,25 @@ function form(){
     }
     return true
 }
+
+//login
+document.addEventListener("DOMContentLoaded", function() {
+    
+    if (localStorage.getItem("isSignedUp") === "true") {
+        document.getElementById("contactUs").style.display = "none"; 
+        document.getElementById("welcome-message").style.display = "block"; 
+    }
+});
+
+document.getElementById("signup-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    let username = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    localStorage.setItem("isSignedUp", "true");
+    localStorage.setItem("username", username);
+    localStorage.setItem("email", email);
+
+    document.getElementById("contactUs").style.display = "none";
+    document.getElementById("welcome-message").style.display = "block";
+});
